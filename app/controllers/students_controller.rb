@@ -13,9 +13,11 @@ class StudentsController < ApplicationController
   def show
     @student = Student.find(params[:id])
   end
+  
   def edit
     @student = Student.find(params[:id])
- end
+  end
+  
   def update
     var= Student.find(params[:id])
     var.update(student_params)
