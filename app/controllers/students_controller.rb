@@ -1,4 +1,3 @@
-
 class StudentsController < ApplicationController
 
   def index
@@ -34,4 +33,5 @@ class StudentsController < ApplicationController
   def student_params(*args)
     params.require(:student).permit(*args)
   end
+  
 end
