@@ -6,8 +6,8 @@ class SchoolClassesController < ApplicationController
   
   def create
     var =SchoolClass.new(school_class_params)
-  var.save
-  redirect_to school_class_path(var)
+    var.save
+    redirect_to school_class_path(var)
   end 
   
   def show
@@ -25,7 +25,7 @@ class SchoolClassesController < ApplicationController
   end
   
   def school_class_params
-        params.require(:school_class).permit(:title, :room_number)
+    params.require(:school_class).permit(:title, :room_number)
   end
   
 end  
